@@ -103,13 +103,17 @@ section ul li:hover{
 
     transform: scale(1.1);
 }
-section ul li p{
+
+section ul li p, section .trailer{
     display: none;
     width:120px;
 }
-section ul li:hover p{
+section ul li:hover p, section ul li:hover .trailer{
     display: flex;
+    text-decoration: none;
+    color: #A1A1AA;
 }
+
 
 .movies-list img {
     width: 90px;
