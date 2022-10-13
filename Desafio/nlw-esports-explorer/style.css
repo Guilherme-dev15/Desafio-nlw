@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body *{
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEzjDCTSAJe544tLE6guPJWAm7WRJ9m2AyvOk2zsaqRg&s');
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: hsl(240, 100%, 3%);
+
+}
+header{
+    padding-top: 32px;
+    height: calc(120px  32px);
+}
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(-90deg, #0f0136, #5b79ff 50.52%, #ffffff 100%  );
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+
+    transition: transform .3s;
+    animation: fromTop .3s 1s backwards;
+}
+
+header div:hover{
+    transform: scale(1.1);
+}
+
+header div img{
+    width: 100%;
+    
+    border-radius: 50%;
+}
+
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin:32px auto;
+    display: flex;
+    flex-direction:column ;
+    gap: 24px;
+    
+}
+ul, ul a {
+    list-style: none;
+    text-decoration: none;
+}
+section{
+    color: #fff;
+    background-image: linear-gradient(90deg, #0f0136, #5b79ff 50.52%, #ffffff 100%  );
+    padding-top: 4px;
+    border-radius: 10px;
+   
+}
+section div{
+    background-image: linear-gradient(180deg, rgb(2, 51, 86), rgb(0, 7, 35) 80.52%, #000103 100%  );
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+section h2{
+    letter-spacing: -0.18px;
+}
+
+section p {
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section div ul{
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    
+}
+section ul div{
+    width: 100%;
+    padding-left: 0px;
+    flex-direction: row;
+    flex: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+   
+}
+section ul li {
+    transition: transform .3s;
+}
+section ul li:hover{
+
+    transform: scale(1.1);
+}
+section ul li p{
+    display: none;
+    width:120px;
+}
+section ul li:hover p{
+    display: flex;
+}
+
+.movies-list img {
+    width: 90px;
+    scroll-snap-align: start;
+    border-radius: 8px;
+}
+.series-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+main section:nth-child(2){
+    animation-delay: .4s ;
+}
+main section:nth-child(3){
+    animation-delay: .8s ;
+    
+}
+/*Animation*/
+
+@keyframes fromTop {
+    from{
+        opacity: 0;
+        transform:translateY(-30px)
+    }   
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+} 
+
+@keyframes fromBottom {
+    from{
+        opacity: 0;
+        transform:translateY(30px)
+    }   
+    to{
+        opacity: 1;
+        transform: translateY(0)
+    }
+} 
