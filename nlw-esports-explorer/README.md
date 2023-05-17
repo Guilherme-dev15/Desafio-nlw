@@ -5,7 +5,7 @@
 
 Projeto construído do evento Next Level Week da Rocketseat
 
-🔗 [Clique aqui para acessar(https://guilherme-dev15.github.io/Desafio-nlw/nlw-esports-explorer/)]
+🔗 [Clique aqui para acessar(https://guilherme-dev15.github.io/Evento-nlw/nlw-esports-explorer/)]
 
 ## 🔨 Tecnologias
 • HTML
