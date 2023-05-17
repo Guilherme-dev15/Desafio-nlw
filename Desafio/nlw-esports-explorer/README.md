@@ -1,5 +1,5 @@
 # NLW eSports - Trilha Explorer
-![preview](.github/Preview.png)
+![guilherme-dev15 github io_Desafio-nlw_Desafio_nlw-esports-explorer_](https://github.com/Guilherme-dev15/Desafio-nlw/assets/49658386/26faeac4-31fd-4c22-b114-0168f1d2ef8b)
 
 > Trilha Explorer
 
